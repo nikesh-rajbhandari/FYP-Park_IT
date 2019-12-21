@@ -32,5 +32,12 @@ public class NavActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        venue.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(NavActivity.this, Venue.class);
+                startActivity(intent);
+            }
+        });
     }
 }
